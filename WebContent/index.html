@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+ 
+#div1{
+
+    position: fixed;
+    bottom: 490px;
+    right: 150px;
+    height: 200px;
+    width: 30%;
+    
+}
+#image{
+
+    position: fixed;
+    
+    top:300px;
+    bottom: 200px;
+    left: 100px;
+
+
+}
+#heading{
+
+    position: fixed;
+    
+    top:200px;
+    bottom: 200px;
+    left: 70px;
+    
+
+
+}
+
+</style>
+<title>Welcome to Paytm Crawler</title>
+</head>
+<body>
+ <div class="panel panel-primary">
+    <div class="panel-heading"><h1 align="center">Welcome User!</h1><br></div>
+    
+    </div>
+  
+  
+ <div id="heading">
+ <h3>Fill In Your Details To Get Going!&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span></h3></div>
+
+<div class="container" align="justify" id="image">
+<img src="Images\paytm.png" height="200" width="200">
+</div>
+
+<div class="container"  id="div1">
+
+
+<button type="button" class="btn btn-info " data-target="#demo1">New User?</button><br/><br/>
+<div id="demo1" >
+<form action="signup.jsp" method="post">
+
+
+<label for="usr">User name :&nbsp;</label><input type="text" name="userid" id="usr"/><br/><br/>
+<label for="usr">Password :&nbsp;</label><input type="password" name="pwd" id="usr" /><br/><br/>
+<label for="usr">Email :&nbsp;</label><input type="text" name="email" id="usr" /><br/><br/>
+<label for="usr">Name :&nbsp;</label><input type="text" name="name" id="usr"/><br/><br/>
+
+
+<input type="submit" value="SIGNUP" class="btn btn-success"/>
+
+</form></div><br/><br/>
+<button type="button" class="btn btn-info "  data-toggle="collapse" data-target="#demo">Existing Users Login</button><br/><br/>
+<div id="demo" class="collapse">
+<form action="login.jsp" method="post">
+<i class="glyphicon glyphicon-user"></i>&nbsp;<input type="text" name="user"/><br><br>
+<i class="glyphicon glyphicon-lock"></i>&nbsp;<input type="password" name="pass"/><br><br>
+
+
+<input type="submit" value="Login"class="btn btn-success"/>
+</form>
+</div>
+ 
+ <div class="alert alert-danger alert-dismissible fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Login Failed</strong> <br/>Some Interruption has Occured!
+  </div>
+
+
+</div>
+</body>
+</html>
